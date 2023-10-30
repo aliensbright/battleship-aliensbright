@@ -9,9 +9,15 @@ def convert(coordinate):
     examples: "B 3" "B3" "b3"
   return value: list containing 2 integers
   """
-  pass
-  return None
+  q = coordinate.replace(' ','')
+  q = q.lower()
+  let = q[1]
+  num = q[2,3]
+  coordNumNum = [let,num]
+  return coordNumNum
 
+coordsLetNum = str(input('Coords: letter, number:'))
+convert(coordsLetNum)
 
 if __name__ == "__main__":
   assert convert("B3") == [1,2]
