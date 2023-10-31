@@ -68,4 +68,4 @@ for m in occupied:
     map1[y] = Gameboard(x,y)
 
 for i in map1:
-    print(i)
+    print(i) #Print the map
